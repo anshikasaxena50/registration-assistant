@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Registration Assistant</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>AI Registration Assistant</h1>
+        <p>Smart guidance for student course registration</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Student Information</h2>
+
+            <form id="registrationForm">
+
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName"
+                       placeholder="Enter your name" required>
+
+                <br><br>
+
+                <label for="branch">Branch</label>
+                <select id="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="cse">Computer Science Engineering</option>
+                    <option value="it">Information Technology</option>
+                    <option value="ece">Electronics & Communication</option>
+                </select>
+
+                <br><br>
+
+                <label for="semester">Semester</label>
+                <select id="semester" required>
+                    <option value="">Select Semester</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                </select>
+
+                <br><br>
+
+                <label for="course">Course</label>
+                <select id="course" required>
+                    <option value="">Select Course</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="ml">Machine Learning</option>
+                    <option value="dsa">Data Structures & Algorithms</option>
+                    <option value="dbms">Database Management Systems</option>
+                    <option value="web">Web Development</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Check Eligibility</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Eligibility Result</h2>
+            <div id="result">
+                <p>Select your details and check eligibility.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Registration Assistant</h2>
+
+            <label for="question">Ask the Assistant</label>
+
+            <input type="text"
+                   id="question"
+                   placeholder="Ask about registration...">
+
+            <button type="button" id="askButton">
+                Ask Assistant
+            </button>
+
+            <div id="assistantResponse">
+                <p>Hello! I can help you with course registration.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AI Registration Assistant &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
